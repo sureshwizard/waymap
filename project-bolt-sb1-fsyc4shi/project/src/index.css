@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS for 3D landmark structures */
+.clip-path-tower {
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.clip-path-pyramid {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.clip-path-spire {
+  clip-path: polygon(50% 0%, 20% 100%, 80% 100%);
+}
+
+.clip-path-mountain {
+  clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+}
+
+/* Line clamp utility for text truncation */
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* Enhanced 3D transforms */
+.transform-gpu {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+/* Smooth animations for landmark rotations */
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.animate-rotate-360 {
+  animation: rotate360 10s linear infinite;
+}
+
+/* Custom gradients for landmarks */
+.landmark-gradient-eiffel {
+  background: linear-gradient(to top, #92400e, #d97706, #fbbf24);
+}
+
+.landmark-gradient-empire {
+  background: linear-gradient(to top, #374151, #6b7280, #9ca3af);
+}
+
+.landmark-gradient-bigben {
+  background: linear-gradient(to top, #92400e, #d97706, #f59e0b);
+}
+
+.landmark-gradient-opera {
+  background: linear-gradient(to top, #f3f4f6, #ffffff);
+}
+
+.landmark-gradient-burj {
+  background: linear-gradient(to top, #1e40af, #3b82f6, #60a5fa);
+}
+
+.landmark-gradient-taj {
+  background: linear-gradient(to top, #e5e7eb, #f9fafb, #ffffff);
+}
+
+.landmark-gradient-colosseum {
+  background: linear-gradient(to top, #92400e, #d97706, #f59e0b);
+}
+
+.landmark-gradient-golden-gate {
+  background: linear-gradient(to top, #dc2626, #ef4444, #f87171);
+}
+
+.landmark-gradient-christ {
+  background: linear-gradient(to top, #d1d5db, #f3f4f6, #ffffff);
+}
+
+.landmark-gradient-leaning {
+  background: linear-gradient(to top, #d1d5db, #e5e7eb, #f9fafb);
+}
